@@ -1,0 +1,486 @@
+/*Generales*/
+
+  body{
+    background-color: white;
+    font-family:'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+  }
+
+  .divTitulos{
+
+    margin: 20px 0px;
+  }
+ 
+
+  /*barra de navegacion*/
+  header{
+    position: sticky;
+  }
+
+  
+
+
+
+    .logo { 
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    }
+    .logo img{
+      height: 100%;
+
+    }
+    
+
+    .menu1 nav ul{
+
+      display: flex;
+      justify-content: flex-start;
+      padding: 0;
+    } 
+    .menu1 nav ul li{
+      list-style-type: none;
+      padding: 2%;
+      border-bottom: 2px solid blue;
+
+    }
+    .menu1 nav ul li a{
+      text-decoration: none;
+      color: black;
+    }
+    .menu2{
+    width: 100%;
+    }
+    .menu2 nav{
+      display: flex;
+      justify-content: center;
+
+    }
+    .menu2 nav ul{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    } 
+    .menu2 nav ul li{
+      list-style-type: none;
+      padding: 30%;
+    }
+    .menu2 nav ul li a{
+      text-decoration: none;
+      }
+    .menu2 nav ul li a.fab{
+      color:blue;}
+    .menu2 nav ul li a.inst{
+      color:#FCAF45;}
+
+    .texto0{ 
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .titulos{
+      color: blue;
+      font-size: 20px;
+      word-spacing: 10px;
+      letter-spacing: 10px;
+      text-align: center;
+    }
+
+  /*texto y titulos*/
+    .texto1 {  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .texto2 { 
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+    .texto3{
+    
+      justify-content: center;
+      align-items: center;
+
+          }
+    .texto4 { grid-area: texto4; }
+    /*carrusel*/
+
+
+     /*footer*/
+    .footer {  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #B3F59B;
+    margin-top: 80px;}
+
+    .footer div{
+      width: 33.33%;
+      height: 150px;
+      margin-bottom: 0;
+
+    }
+
+
+    .footer .footer3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer .footer3 iframe{
+      height: 150px;
+      width: 80%;
+    }
+
+
+    /*manualConvivencia*/
+
+    .manualConvivencia{
+      width: 70%;
+      height: 500px ;
+    }
+
+    /*Galeria*/
+    .divGaleria div{
+      margin: 20px 0px;
+
+    }
+
+
+    @media only screen and (max-width: 767px){
+     
+      header .logo{
+        display: flex;
+        justify-content: center;
+      }
+
+      div img{
+        width: 100%;
+
+      }
+      div iframe{
+        width: 100%;
+      }
+
+      .menu1{
+        display: flex;
+        justify-content: center;
+
+        
+      }
+     
+    
+
+
+      /*
+      
+
+      div{
+        width: 100%;
+        margin: 0px;
+      }
+      dth: 100%;
+      }
+
+      Section .carusel{
+        width: 100%;
+      }
+      */
+
+      
+
+
+
+    }
+ 
+
+ 
+
+
+/*
+.contenedor {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 0.5fr 1fr 1fr 1fr 0.6fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "logo menu1 menu1 menu1 menu1 menu2"
+    "texto0 texto0 texto0 texto0 texto0 texto0"
+    ". quienesSomos quienesSomos quienesSomos quienesSomos ."
+    ". quienesSomos quienesSomos quienesSomos quienesSomos ."
+    "texto1 texto1 texto1 texto1 texto1 texto1"
+    "noticia1 noticia1 noticia1 noticia2 noticia2 noticia2"
+    "noticia1 noticia1 noticia1 noticia2 noticia2 noticia2"
+    "texto2 texto2 texto2 texto2 texto2 texto2"
+    "imagen1 imagen1 imagen1 imagen2 imagen2 imagen2"
+    "imagen1 imagen1 imagen1 imagen2 imagen2 imagen2"
+    ". . . . . ."
+    "footer footer footer footer footer footer"; 
+}
+.containerOracion {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.25fr 0.25fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo menu1 menu1 menu1 menu1 menu2"
+    "texto0 texto0 texto0 texto0 texto0 texto0"
+    ". oracion oracion oracion oracion ."
+    ". . . . . ."
+    ".  videoOracion videoOracion videoOracion videoOracion ."
+    ".  videoOracion videoOracion videoOracion videoOracion  ."
+    ". . . . . ."
+    "footer footer footer footer footer footer";
+}
+
+.containerQuienesSomos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.25fr 0.25fr 0.5fr 0.25fr 0.5fr 0.25fr 0.5fr 0.25fr 0.25fr 1fr 1fr 0.7fr 0.25fr 1fr 1fr 0.6fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "logo menu1 menu1 menu1 menu1 menu2"
+    ". . texto0 texto0 . ."
+    ". mision mision mision mision ."
+    ". . texto1 texto1 . ."
+    ". vision vision vision vision ."
+    ". . texto2 texto2 . ."
+    ". filosofia filosofia filosofia filosofia ."
+    ". texto3 texto3 texto3 texto3 ."
+    ". principiosInstitucionales principiosInstitucionales principiosInstitucionales principiosInstitucionales ."
+    ". ulPrincipiosIntitucionales ulPrincipiosIntitucionales ulPrincipiosIntitucionales ulPrincipiosIntitucionales ."
+    ". ulPrincipiosIntitucionales ulPrincipiosIntitucionales ulPrincipiosIntitucionales ulPrincipiosIntitucionales ."
+    ". ulPrincipiosIntitucionales ulPrincipiosIntitucionales ulPrincipiosIntitucionales ulPrincipiosIntitucionales ."
+    ". texto4 texto4 texto4 texto4 ."
+    ". politicasCalidad politicasCalidad politicasCalidad politicasCalidad ."
+    ". politicasCalidad politicasCalidad politicasCalidad politicasCalidad ."
+    "footer footer footer footer footer footer";
+ 
+}
+.containerManualConvivencia {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.25fr 0.25fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo menu1 menu1 menu1 menu1 menu2"
+    "texto0 texto0 texto0 texto0 texto0 texto0"
+    ". manualConvivencia manualConvivencia manualConvivencia manualConvivencia ."
+    ". manualConvivencia manualConvivencia manualConvivencia manualConvivencia ."
+    ". manualConvivencia manualConvivencia manualConvivencia manualConvivencia ."
+    ". manualConvivencia manualConvivencia manualConvivencia manualConvivencia ."
+    ". . . . . ."
+    "footer footer footer footer footer footer";
+}
+.containerGaleria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.6fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo menu1 menu1 menu1 menu1 menu2"
+    "texto0 texto0 texto0 texto0 texto0 texto0"
+    "imagen1 imagen1 imagen1 imagen2 imagen2 imagen2"
+    "imagen1 imagen1 imagen1 imagen2 imagen2 imagen2"
+    "imagen3 imagen3 imagen3 imagen4 imagen4 imagen4"
+    "imagen3 imagen3 imagen3 imagen4 imagen4 imagen4"
+    "imagen5 imagen5 imagen5 imagen6 imagen6 imagen6"
+    "imagen5 imagen5 imagen5 imagen6 imagen6 imagen6"
+    ". imagen7 imagen7 imagen7 imagen7 ."
+    ". imagen7 imagen7 imagen7 imagen7 ."
+    ". . . . . ."
+    "footer footer footer footer footer footer";
+
+
+}
+
+.containerContacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.25fr 0.25fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo menu1 menu1 menu1 menu1 menu2"
+    "texto0 texto0 texto0 texto0 texto0 texto0"
+    "formulario formulario formulario formulario formulario formulario"
+    "formulario formulario formulario formulario formulario formulario"
+    "formulario formulario formulario formulario formulario formulario"
+    "formulario formulario formulario formulario formulario formulario"
+    ". . . . . ."
+    "footer footer footer footer footer footer";
+}
+
+
+/*contenedorIndex y su contenido*/
+/*
+
+    .quienesSomos { grid-area: quienesSomos;
+    display: flex; 
+    text-align: justify;
+    }
+    .quienesSomos p{font-size: 20px;
+
+    }
+
+    .noticia1 { grid-area: noticia1; 
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .noticia1 iframe{
+      border: #F5F3A2  solid 3px;
+    }
+    .noticia2 { grid-area: noticia2;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .noticia2 iframe{
+      border: #F5F3A2  solid 3px;
+    }
+
+    /*contenedorOracion y su contenido*/
+    /*
+    .oracion { grid-area: oracion;
+      text-align: justify;
+     }
+
+    .videoOracion { grid-area: videoOracion;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    
+/*contenedorQuienesSomos y su contenido*/
+/*
+
+    .mision { grid-area: mision;
+    text-align: justify; }
+
+    .vision { grid-area: vision; 
+    text-align: justify;}
+
+    .filosofia { grid-area: filosofia; 
+    text-align: justify;}
+
+    .principiosInstitucionales { grid-area: principiosInstitucionales; 
+    text-align: justify;}
+
+    .ulPrincipiosIntitucionales { grid-area: ulPrincipiosIntitucionales; 
+    text-align: justify;}
+
+    .politicasCalidad { grid-area: politicasCalidad;
+    text-align: justify; }
+
+    /*contenedorContacto y su contenido*/
+    /*
+    .formulario { grid-area: formulario;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+    .formulario form{
+      border: blue 3px solid;
+    }
+/* imagenes de containerGaleria e Index*/
+/*
+    .containerGaleria img{
+      margin: 15px;
+    }
+    .imagen1 { grid-area: imagen1; 
+    display: flex;
+    justify-content: center;
+    }
+    .imagen1 img{
+      height: 350px;
+      width: 80%;
+      border: #F5F3A2  solid 3px;
+    }
+    .imagen2 { grid-area: imagen2;
+    display: flex;
+    justify-content: center;
+     }
+    .imagen2 img{
+      height: 350px;
+      width: 80%;
+      border: #F5F3A2  solid 3px;
+
+    }
+
+    .imagen3 { grid-area: imagen3;
+    display: flex;
+    justify-content: center;
+     }
+    .imagen3 img{
+      height: 350px;
+      width: 80%;
+      border: #F5F3A2  solid 3px;
+    }
+
+    .imagen4 { grid-area: imagen4;
+    display: flex;
+    justify-content: center;
+     }
+    .imagen4 img{
+      height: 350px;
+      width: 80%;
+      border: #F5F3A2  solid 3px;
+    }
+
+    .imagen5 { grid-area: imagen5;
+    display: flex;
+    justify-content: center;
+     }
+    .imagen5 img{
+      height: 350px;
+      width: 80%;
+      border: #F5F3A2  solid 3px;
+    }
+
+    .imagen6 { grid-area: imagen6;
+    display: flex;
+    justify-content: center;
+     }
+    .imagen6 img{
+      height: 350px;
+      width: 80%;
+      border: #F5F3A2  solid 3px;
+    }
+
+    .imagen7 { grid-area: imagen7;
+    display: flex;
+    justify-content: center;
+     }
+    .imagen7 img{
+      height: 350px;
+      width: 60%;
+      border: #F5F3A2  solid 3px;
+    }
+
+
+/*contenedorManualDeConvivencia*/
+/*
+
+.manualConvivencia { grid-area: manualConvivencia;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+   }
+   .manualConvivencia embed{
+    height: 100%;
+    width: 100%;
+    border: solid 3px #F5F3A2 ;
+   }
+
+
+
